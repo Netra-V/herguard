@@ -1,0 +1,31 @@
+:root {
+  --blue: #4f46e5;
+  --purple: #7c3aed;
+  --violet: #a855f7;
+  --gradient: linear-gradient(135deg, #4f46e5, #7c3aed 50%, #a855f7);
+  --bg: #eef2ff;
+  --bg-dark: #0f172a;
+  --white: #ffffff;
+  --text: #1e1b4b;
+  --muted: #64748b;
+  --border: rgba(79, 70, 229, 0.15);
+  --glass: rgba(255, 255, 255, 0.72);
+  --glass-dark: rgba(15, 23, 42, 0.75);
+  --shadow: 0 8px 32px rgba(79, 70, 229, 0.12);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --sos: #ef4444;
+  --green: #22c55e;
+  --yellow: #eab308;
+  --sidebar-w: 260px;
+  --font: 'Inter', sans-serif;
+  --logo: 'Playfair Display', serif;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --glass: rgba(30, 41, 59, 0.85);
+  --border: rgba(148, 163, 184, 0.15);
+}

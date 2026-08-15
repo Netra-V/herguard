@@ -1,0 +1,222 @@
+/* ==========================
+   AUTH PAGE
+========================== */
+
+.auth-page{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:2rem;
+    background:linear-gradient(135deg,#eef2ff 0%,#ede9fe 50%,#f5f3ff 100%);
+}
+
+.auth-card{
+    width:100%;
+    max-width:480px;
+    padding:2.5rem;
+    background:rgba(255,255,255,0.8);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.auth-logo{
+    text-align:center;
+    font-family:var(--logo);
+    font-size:2rem;
+    font-weight:700;
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-bottom:.5rem;
+}
+
+.auth-tagline{
+    text-align:center;
+    color:var(--muted);
+    font-size:.9rem;
+    margin-bottom:2rem;
+}
+
+.auth-heading{
+    font-size:1.5rem;
+    font-weight:700;
+    color:var(--text);
+    margin-bottom:.4rem;
+}
+
+.auth-sub{
+    color:var(--muted);
+    font-size:.9rem;
+    margin-bottom:1.5rem;
+}
+
+.auth-form{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.auth-form label{
+    display:block;
+    font-size:.9rem;
+    font-weight:600;
+    margin-bottom:.35rem;
+    color:var(--text);
+}
+
+.auth-form input{
+    width:100%;
+    padding:.8rem 1rem;
+    border:1.5px solid var(--border);
+    border-radius:var(--radius-sm);
+    outline:none;
+    font-size:.95rem;
+    transition:.25s;
+    background:#fff;
+}
+
+.auth-form input:focus{
+    border-color:var(--blue);
+    box-shadow:0 0 0 4px rgba(79,70,229,.12);
+}
+
+.auth-form button{
+    width:100%;
+    margin-top:.5rem;
+}
+
+.auth-footer{
+    text-align:center;
+    margin-top:1.5rem;
+    color:var(--muted);
+    font-size:.9rem;
+}
+
+.auth-footer a{
+    color:var(--blue);
+    text-decoration:none;
+    font-weight:600;
+}
+
+.auth-footer a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================
+   INFO BOX
+========================== */
+
+.auth-tip{
+    margin-top:1.25rem;
+    padding:1rem;
+    border-radius:var(--radius-sm);
+    background:rgba(79,70,229,.08);
+    border:1px solid rgba(79,70,229,.15);
+    color:var(--text);
+    font-size:.85rem;
+}
+
+/* ==========================
+   EMERGENCY BOX
+========================== */
+
+.emergency-box{
+    margin-top:2rem;
+    padding:1.25rem;
+    border-radius:var(--radius);
+    background:rgba(239,68,68,.06);
+    border:1px solid rgba(239,68,68,.18);
+}
+
+.emergency-box h4{
+    color:var(--sos);
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    font-size:.8rem;
+    margin-bottom:.8rem;
+}
+
+.sos-quick{
+    display:flex;
+    align-items:center;
+    gap:.8rem;
+    padding:.85rem 1rem;
+    background:#fff;
+    border:1px solid rgba(239,68,68,.18);
+    border-radius:var(--radius-sm);
+    cursor:pointer;
+    transition:.25s;
+    margin-bottom:.75rem;
+}
+
+.sos-quick:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(239,68,68,.18);
+}
+
+.dial-pills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem;
+    margin-top:.75rem;
+}
+
+.dial-pill{
+    padding:.45rem .9rem;
+    border-radius:999px;
+    background:#fff;
+    border:1px solid var(--border);
+    font-size:.8rem;
+    font-weight:600;
+    color:var(--blue);
+}
+
+.emergency-section{
+    margin-top:1.5rem;
+    padding-top:1.5rem;
+    border-top:2px solid rgba(79,70,229,.12);
+}
+
+.emergency-section h4{
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+    color:var(--blue);
+    margin-bottom:.8rem;
+    font-size:.9rem;
+}
+
+.required::after{
+    content:" *";
+    color:var(--sos);
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .auth-page{
+        padding:1rem;
+    }
+
+    .auth-card{
+        padding:2rem;
+    }
+
+    .auth-logo{
+        font-size:1.7rem;
+    }
+
+    .auth-heading{
+        font-size:1.3rem;
+    }
+
+}

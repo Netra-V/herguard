@@ -1,0 +1,50 @@
+.map-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.severity-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.severity-bar span { font-size: 0.78rem; font-weight: 600; color: var(--muted); }
+.sev-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+.route-summary {
+  background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  margin: 1rem 0;
+}
+.route-metrics { display: flex; gap: 2rem; margin: 0.75rem 0; }
+.route-metrics div { text-align: center; }
+.route-metrics strong { display: block; font-size: 1.3rem; }
+.route-metrics small { color: var(--muted); font-size: 0.78rem; }
+.filter-select {
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
+.incident-popup { font-size: 0.85rem; }
+.incident-popup h4 { margin-bottom: 0.25rem; text-transform: capitalize; }
+.find-me-btn {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.contact-info { display: flex; align-items: center; gap: 1rem; }
+.contact-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.primary-tag {
+  background: var(--gradient);
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+.contact-form-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
+@media (max-width: 768px) { .contact-form-grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,58 @@
+.sos-page .active-banner {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.sos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.sos-btn-wrap { text-align: center; padding: 2rem; }
+.sos-circle {
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  border: none;
+  margin: 1.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 40px rgba(239, 68, 68, 0.5);
+  transition: 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+.sos-circle:active { transform: scale(0.95); }
+.sos-circle.counting { animation: sosPulse 0.5s infinite alternate; }
+@keyframes sosPulse { to { box-shadow: 0 0 60px rgba(239, 68, 68, 0.8); } }
+.countdown { font-size: 3rem; font-weight: 800; color: var(--sos); }
+.step-item {
+  display: flex; gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.step-num {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--gradient);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.85rem;
+  flex-shrink: 0;
+}
+.gps-badge {
+  background: #dcfce7;
+  color: #166534;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+@media (max-width: 768px) { .sos-grid { grid-template-columns: 1fr; } }
